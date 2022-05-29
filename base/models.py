@@ -21,7 +21,7 @@ class Room(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     
     class Meta:
-        ordering = ['-updated', '-created']
+        ordering = ['-updated', '-created'] # - for descending order 
     
     
     def __str__(self):
